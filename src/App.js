@@ -28,9 +28,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <DieCreator
-          addDie={this.addDie}
-        />
+        <DieCreator addDie={this.addDie} />
         <DieList dice={this.state.dice} />
       </div>
     );

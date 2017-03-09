@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Panel } from 'react-bootstrap';
 import RollerDisplay from '../../RollerDisplay/components/RollerDisplay';
 import RollButton from '../../RollButton/components/RollButton';
 import '../styles/die.css';
+
+const propTypes = {
+  sides: PropTypes.number,
+};
 
 class Die extends Component {
   constructor(props) {
@@ -61,5 +65,7 @@ class Die extends Component {
     );
   }
 }
+
+Die.PropTypes = propTypes;
 
 export default Die;

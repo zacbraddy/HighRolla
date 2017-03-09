@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Die from '../../Die/components/Die';
+
+const propTypes = {
+  dice: PropTypes.arrayOf(PropTypes.number),
+};
 
 const DieList = (props) => (
   <div>
@@ -10,5 +14,7 @@ const DieList = (props) => (
     }
   </div>
 );
+
+DieList.propTypes = propTypes;
 
 export default DieList;

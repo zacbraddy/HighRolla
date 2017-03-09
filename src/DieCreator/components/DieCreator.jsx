@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Button, ControlLabel, FormControl } from 'react-bootstrap';
 import '../styles/DieCreator.css';
+
+const propTypes = {
+  addDie: PropTypes.func,
+}
 
 class DieCreator extends Component {
   constructor(props) {
@@ -55,5 +59,7 @@ class DieCreator extends Component {
     );
   }
 }
+
+DieCreator.propTypes = propTypes;
 
 export default DieCreator;
