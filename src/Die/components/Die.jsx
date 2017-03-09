@@ -23,6 +23,10 @@ class Die extends Component {
     this.doRoll = this.doRoll.bind(this);
   }
 
+  componentDidMount() {
+    this.doRoll();
+  }
+
   doRoll() {
     if (!this.state.isRolling) {
       this.numberOfRolls = 10;
